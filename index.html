@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading Facile | Débuter en trading</title>
+    <meta
+      name="description"
+      content="Un site simple pour apprendre les bases du trading quand on débute : vocabulaire, gestion du risque et plan d'action."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="logo" href="#">Trading Facile</a>
+        <ul>
+          <li><a href="#bases">Bases</a></li>
+          <li><a href="#risque">Risque</a></li>
+          <li><a href="#plan">Plan</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content">
+        <p class="tag">Pour traders débutants</p>
+        <h1>Apprends à trader sans te brûler les ailes</h1>
+        <p>
+          Comprends les notions essentielles, protège ton capital et crée une
+          routine simple avant de passer en réel.
+        </p>
+        <a class="btn" href="#plan">Commencer maintenant</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="bases" class="section">
+        <h2>1) Les bases à connaître</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Marchés</h3>
+            <p>
+              Forex, crypto, actions, indices : choisis un seul marché au début
+              pour rester focus.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Analyse technique</h3>
+            <p>
+              Apprends les tendances, supports/résistances et niveaux clés avant
+              d'ajouter des indicateurs.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Psychologie</h3>
+            <p>
+              Le trading est un jeu de discipline : patience, règles claires et
+              exécution régulière.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="risque" class="section alt">
+        <h2>2) Règle d'or : gérer le risque</h2>
+        <p class="intro">
+          Même une bonne stratégie perd parfois. Ce qui fait durer un trader,
+          c'est la protection du capital.
+        </p>
+        <ul class="checklist">
+          <li>Risque maximum par trade : <strong>1% du capital</strong>.</li>
+          <li>Toujours placer un <strong>stop-loss</strong>.</li>
+          <li>Éviter le sur-trading : qualité &gt; quantité.</li>
+          <li>Noter chaque position dans un journal de trading.</li>
+        </ul>
+      </section>
+
+      <section id="plan" class="section">
+        <h2>3) Ton mini plan sur 30 jours</h2>
+        <div class="timeline">
+          <div>
+            <h3>Semaine 1</h3>
+            <p>Comprendre le vocabulaire + observer le marché.</p>
+          </div>
+          <div>
+            <h3>Semaine 2</h3>
+            <p>Tester une seule stratégie sur compte démo.</p>
+          </div>
+          <div>
+            <h3>Semaine 3</h3>
+            <p>Travailler la gestion du risque et la taille de position.</p>
+          </div>
+          <div>
+            <h3>Semaine 4</h3>
+            <p>Évaluer les résultats et ajuster les règles.</p>
+          </div>
+        </div>
+
+        <div class="calculator">
+          <h3>Calculateur de risque (simple)</h3>
+          <p>Combien peux-tu risquer par trade ?</p>
+          <div class="form-row">
+            <label for="capital">Capital (€)</label>
+            <input id="capital" type="number" min="0" step="0.01" value="1000" required />
+          </div>
+          <div class="form-row">
+            <label for="percent">Risque (%)</label>
+            <input id="percent" type="number" min="0" max="100" step="0.1" value="1" required />
+          </div>
+          <button id="calcBtn" class="btn secondary" type="button">Calculer</button>
+          <p id="result" class="result" aria-live="polite">Risque conseillé : 10,00 €</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Trading Facile — Apprends d'abord, trade ensuite.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
